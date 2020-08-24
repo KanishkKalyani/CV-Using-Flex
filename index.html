@@ -1,342 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>CV</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-</head>
+	<style type="text/css" media="screen">
+		:root {
+			width: 100vw;
+			height: 100vh;
+		}
 
-<style type="text/css" media="screen">
-  :root {
-    width: 100vw;
-    height: 100vh;
-  }
+		* {
+			box-sizing: border-box;
+			font-weight: 400;
+			font-family: "Lato", sans-serif;
+		}
 
-  * {
-    box-sizing: border-box;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-  }
+		.bglightgreen {
+			background: #2ebcae;
+		}
 
-  .bglightgreen {
-    background: #2ebcae;
-  }
+		.heading {
+			color: #2ebcae;
+			font-weight: 900;
+			margin: 0 0;
+			letter-spacing: 4px;
+			font-size: 25px;
+			width: 100%;
+			border-bottom: 3px solid #2ebcae;
+		}
 
-  .heading {
-    color: #2ebcae;
-    font-weight: 900;
-    margin: 0 0;
-    letter-spacing: 4px;
-    font-size: 25px;
-    width: 100%;
-    border-bottom: 3px solid #2ebcae;
-  }
+		.outer-container {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: space-around;
+		}
 
-  .outer-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
+		.left-container {
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
 
-  .left-container {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+		.right-container {
+			width: 65%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
 
-  .right-container {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+		.left-block-1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-  .left-block-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+		.skills-list {
+			flex-direction: column;
+			justify-content: space-between;
+		}
 
-  .skills-list {
-    flex-direction: column;
-    justify-content: space-between;
-  }
+		.skills-list > div {
+			margin: 20px 0;
+		}
 
-  .skills-list>div {
-    margin: 20px 0;
-  }
+		.skills-list > div > span {
+			background: #2ebcae;
+			color: white;
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			padding: 5px;
+		}
 
-  .skills-list>div>span {
-    background: #2ebcae;
-    color: white;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 5px;
-  }
+		.right-block-1 {
+			background: #2ebcae;
+			color: white;
+		}
 
-  .right-block-1 {
-    background: #2ebcae;
-    color: white;
-  }
+		.left-block-1,
+		.left-block-2,
+		.left-block-3,
+		.left-block-4,
+		.right-block-1,
+		.right-block-2,
+		.right-block-3,
+		.right-block-4 {
+			padding: 5px;
+		}
 
-  .left-block-1,
-  .left-block-2,
-  .left-block-3,
-  .left-block-4,
-  .right-block-1,
-  .right-block-2,
-  .right-block-3,
-  .right-block-4 {
-    padding: 5px;
-  }
+		.left-block-2,
+		.left-block-3,
+		.left-block-4,
+		.right-block-1,
+		.right-block-2,
+		.right-block-3,
+		.right-block-4 {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
 
-  .left-block-2,
-  .left-block-3,
-  .left-block-4,
-  .right-block-1,
-  .right-block-2,
-  .right-block-3,
-  .right-block-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+		.profile-pic {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
 
-  .profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
+		.left-block-4 > div {
+			margin-bottom: 5px;
+		}
 
-  .left-block-4>div {
-    margin-bottom: 5px;
-  }
+		.five-circles {
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+		}
 
-  .five-circles {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
+		.circle {
+			width: 30px;
+			height: 30px;
+			background: grey;
+			border: 2px solid #2ebcae;
+			border-radius: 50%;
+			margin: 0 5px;
+		}
 
-  .circle {
-    width: 30px;
-    height: 30px;
-    background: grey;
-    border: 2px solid #2ebcae;
-    border-radius: 50%;
-    margin: 0 5px;
-  }
+		.circle1 {
+			width: 30px;
+			height: 30px;
+			border: 2px solid #2ebcae;
+			border-radius: 50%;
+			margin: 0 5px;
+		}
 
-  .circle1 {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #2ebcae;
-    border-radius: 50%;
-    margin: 0 5px;
-  }
+		.intern-info {
+			display: flex;
+			justify-content: space-between;
+		}
 
-  .intern-info {
-    display: flex;
-    justify-content: space-between;
-  }
+		.intern-place,
+		.proj-name {
+			color: #2ebcae;
+			font-size: 18px;
+		}
 
-  .intern-place,
-  .proj-name {
-    color: #2ebcae;
-    font-size: 18px;
-  }
+		.intern-duration {
+			color: #2ebcae;
+		}
 
-  .intern-duration {
-    color: #2ebcae;
-  }
+		.left-block-2 > span {
+			margin: 5px 0;
+		}
 
-  .left-block-2>span {
-    margin: 5px 0;
-  }
+		a {
+			text-decoration: none;
+		}
+	</style>
 
-  a {
-    text-decoration: none;
-  }
-</style>
+	<body>
+		<div class="outer-container">
+			<div class="left-container">
+				<div class="left-block-1">
+					<img
+						class="profile-pic"
+						src="https://cdna.artstation.com/p/assets/images/images/012/762/840/medium/jesus-borunda-luffy-smile.jpg?1536379098"
+						alt="Profile pic"
+					/>
+				</div>
+				<div class="left-block-2">
+					<h3 class="heading">Contact Information</h3>
+					<span>kanishkkalyani@gmail.com</span>
+					<span>+91-6354436734</span>
+					<span>Surat, Gujarat</span>
+					<div>
+						<a
+							href="https://www.linkedin.com/in/kanishkkalyani-1997/"
+							target="_blank"
+						>
+							LinkedIn
+						</a>
+					</div>
+					<div>
+						<a href="https://github.com/KanishkKalyani" target="_blank">
+							Github
+						</a>
+					</div>
+					<div>
+						<a href="https://dribbble.com/kanishkkalyani" target="_blank">
+							Dribbble
+						</a>
+					</div>
+				</div>
+				<div class="left-block-3">
+					<h3 class="heading">SKILLS</h3>
+					<div class="skills-list">
+						<div><span>Java</span></div>
+						<div><span>HTML</span></div>
+						<div><span>CSS</span></div>
+						<div><span>Java Script</span></div>
+						<div><span>React.js</span></div>
+						<div><span>Bootstrap</span></div>
+					</div>
+				</div>
+				<div class="left-block-4">
+					<h3 class="heading" style="margin-bottom: 10px;">LANGUAGES</h3>
+					<div>English</div>
+					<div class="five-circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+					<div>Hindi</div>
+					<div class="five-circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div>
+					<div>Gujarati</div>
+					<div class="five-circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle1"></div>
+						<div class="circle1"></div>
+					</div>
+					<div>Marwari</div>
+					<div class="five-circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle1"></div>
+						<div class="circle1"></div>
+					</div>
+					<div>Japanese</div>
+					<div class="five-circles">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle1"></div>
+						<div class="circle1"></div>
+						<div class="circle1"></div>
+					</div>
+				</div>
+			</div>
 
-<body>
-  <div class="outer-container">
+			<div class="right-container">
+				<div class="right-block-1">
+					<h1 style="margin: 0 0 5px 0;">KANISHK KALYANI</h1>
+					<h3
+						style="
+							color: white;
+							margin: 0 0 20px 0;
+							border-bottom: 3px solid white;
+						"
+					>
+						Software Developer | Engineer
+					</h3>
+					<div>
+						I have a clear logical mind with practical approaches of solving a
+						problem and drive to see it to completion. I accept challenges and
+						do not wavier under pressure. Hard work with utmost focus is my
+						biggest strength. I can multi-task, quickly adapt to new development
+						environments, learn new systems and find creative and scalable
+						solutions to difficult problems.
+					</div>
+				</div>
 
-    <div class="left-container">
-      <div class="left-block-1">
-        <img class="profile-pic"
-          src="https://cdna.artstation.com/p/assets/images/images/012/762/840/medium/jesus-borunda-luffy-smile.jpg?1536379098"
-          alt="Profile pic" />
-      </div>
-      <div class="left-block-2">
-        <h3 class="heading">Contact Information</h3>
-        <span>kanishkkalyani@gmail.com</span>
-        <span>+91-6354436734</span>
-        <span>Surat, Gujarat</span>
-        <div>
-          <a href="https://www.linkedin.com/in/kanishkkalyani-1997/" target="_blank">
-            LinkedIn
-          </a>
-        </div>
-        <div>
-          <a href="https://github.com/KanishkKalyani" target="_blank">
-            Github
-          </a>
-        </div>
-        <div>
-          <a href="https://dribbble.com/kanishkkalyani" target="_blank">
-            Dribbble
-          </a>
-        </div>
-      </div>
-      <div class="left-block-3">
-        <h3 class="heading">SKILLS</h3>
-        <div class="skills-list">
-          <div><span>Java</span></div>
-          <div><span>HTML</span></div>
-          <div><span>CSS</span></div>
-          <div><span>Java Script</span></div>
-          <div><span>React.js</span></div>
-          <div><span>Bootstrap</span></div>
-        </div>
-      </div>
-      <div class="left-block-4">
-        <h3 class="heading" style="margin-bottom: 10px">LANGUAGES</h3>
-        <div>English</div>
-        <div class="five-circles">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-        <div>Hindi</div>
-        <div class="five-circles">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-        <div>Gujarati</div>
-        <div class="five-circles">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle1"></div>
-          <div class="circle1"></div>
-        </div>
-        <div>Marwari</div>
-        <div class="five-circles">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle1"></div>
-          <div class="circle1"></div>
-        </div>
-        <div>Japanese</div>
-        <div class="five-circles">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle1"></div>
-          <div class="circle1"></div>
-          <div class="circle1"></div>
-        </div>
-      </div>
-    </div>
+				<div class="right-block-2">
+					<h3 class="heading" style="margin-top: 10px;">EDUCATION</h3>
+					<ul>
+						<li>
+							B.Tech
+							<ul>
+								<li>College - SRM Institute of Science and Technology</li>
+								<li>Stream - Electronics and Communication Engineering</li>
+								<li>CGPA / Percentage - 8.54 / 89.43%</li>
+							</ul>
+						</li>
+						<li>
+							Class XII
+							<ul>
+								<li>Metas of Seventhday Adventist School, Surat</li>
+								<li>Board - ISC</li>
+								<li>Percentage - 89.2%</li>
+							</ul>
+						</li>
+						<li>
+							Class X
+							<ul>
+								<li>Ryan International School, Surat</li>
+								<li>Board - ICSE</li>
+								<li>Percentage - 91%</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 
-    <div class="right-container">
+				<div class="right-block-3">
+					<h3 class="heading">INTERNSHIP</h3>
+					<ul>
+						<li>
+							<div class="intern-info">
+								<h4 class="intern-place">Linkup Electronics</h4>
+								<h5 class="intern-duration">1 Month</h5>
+							</div>
 
-      <div class="right-block-1">
-        <h1 style="margin: 0 0 5px 0">KANISHK KALYANI</h1>
-        <h3 style="color: white; margin: 0 0 20px 0; border-bottom: 3px solid white;">Software Developer | Engineer</h3>
-        <div>
-          I have a clear logical mind with practical approaches of solving a problem and drive to see it to completion.
-          I accept challenges and do not wavier under pressure. Hard work with utmost focus is my biggest strength. I
-          can multi-task,
-          quickly adapt to new development environments, learn new systems and find creative and scalable solutions to
-          difficult problems.
-        </div>
-      </div>
+							<ul>
+								<li>Intercom Systems</li>
+								<li>CCTV systems</li>
+								<li>Video Door Phone Systems</li>
+								<li>Junction box Maintenance</li>
+							</ul>
+						</li>
+						<li>
+							<div class="intern-info">
+								<h4 class="intern-place">Transit Electronics</h4>
+								<h5 class="intern-duration">1 Month</h5>
+							</div>
+							<ul>
+								<li>CCTV Systems</li>
+								<li>Digital Security Systems</li>
+								<li>Fire Safety Systems</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 
-      <div class="right-block-2">
-        <h3 class="heading" style="margin-top: 10px">EDUCATION</h3>
-        <ul>
-          <li>B.Tech
-            <ul>
-              <li>College - SRM Institute of Science and Technology</li>
-              <li>Stream - Electronics and Communication Engineering</li>
-              <li>CGPA / Percentage - 8.54 / 89.43%</li>
-            </ul>
-          </li>
-          <li>Class XII
-            <ul>
-              <li>Metas of Seventhday Adventist School, Surat</li>
-              <li>Board - ISC</li>
-              <li>Percentage - 89.2%</li>
-            </ul>
-          </li>
-          <li>Class X
-            <ul>
-              <li>Ryan International School, Surat</li>
-              <li>Board - ICSE</li>
-              <li>Percentage - 91%</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="right-block-3">
-        <h3 class="heading">INTERNSHIP</h3>
-        <ul>
-          <li>
-            <div class="intern-info">
-              <h4 class="intern-place">Linkup Electronics</h4>
-              <h5 class="intern-duration">1 Month</h5>
-            </div>
-
-            <ul>
-              <li>Intercom Systems</li>
-              <li>CCTV systems</li>
-              <li>Video Door Phone Systems</li>
-              <li>Junction box Maintenance</li>
-            </ul>
-          </li>
-          <li>
-            <div class="intern-info">
-              <h4 class="intern-place">Transit Electronics</h4>
-              <h5 class="intern-duration">1 Month</h5>
-            </div>
-            <ul>
-              <li>CCTV Systems</li>
-              <li>Digital Security Systems</li>
-              <li>Fire Safety Systems</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="right-block-4">
-        <h3 class="heading">PROJECT</h3>
-        <div>
-          <h4 class="proj-name">Hand Gesture Vocalizer</h4>
-          Converting hand gestures into audio responses, as a tool to help the impaired and challenged people. Using
-          Arduino UNO
-          and Flex sensors along with APR33A3 IC to store audio files and provide appropriate outputs corresponding to
-          the hand
-          gestures made.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</body>
-
+				<div class="right-block-4">
+					<h3 class="heading">PROJECT</h3>
+					<div>
+						<h4 class="proj-name">Hand Gesture Vocalizer</h4>
+						Converting hand gestures into audio responses, as a tool to help the
+						impaired and challenged people. Using Arduino UNO and Flex sensors
+						along with APR33A3 IC to store audio files and provide appropriate
+						outputs corresponding to the hand gestures made.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
