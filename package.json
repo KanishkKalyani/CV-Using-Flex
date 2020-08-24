@@ -1,0 +1,23 @@
+{
+	"name": "cv_flex",
+	"version": "1.0.0",
+	"description": "CV Using CSS Flex",
+	"main": "CV.html",
+	"homepage": "https://kanishkkalyani.github.io/CV-Using-Flex/",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KanishkKalyani/CV-Using-Flex.git"
+	},
+	"author": "Kanishk Kalyani",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/KanishkKalyani/CV-Using-Flex/issues"
+	},
+	"homepage": "https://github.com/KanishkKalyani/CV-Using-Flex#readme",
+	"dependencies": {
+		"gh-pages": "^3.1.0"
+	}
+}
