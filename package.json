@@ -2,7 +2,7 @@
 	"name": "cv_flex",
 	"version": "1.0.0",
 	"description": "CV Using CSS Flex",
-	"main": "CV.html",
+	"main": "index.html",
 	"homepage": "https://kanishkkalyani.github.io/CV-Using-Flex/",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
