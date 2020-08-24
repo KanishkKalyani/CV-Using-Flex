@@ -5,7 +5,9 @@
 	"main": "index.html",
 	"homepage": "https://kanishkkalyani.github.io/CV-Using-Flex/",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"repository": {
 		"type": "git",
